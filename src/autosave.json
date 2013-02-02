@@ -1,0 +1,49 @@
+{
+	"pattrstorage" : 	{
+		"name" : "mlit",
+		"slots" : 		{
+			"1" : 			{
+				"id" : 1,
+				"data" : 				{
+					"back" : [ 1 ],
+					"window::utput[1]" : [ "#-#", "grand", 389, 24, 880, 300, "#-#", "petit", 10, 600, 300, 200 ],
+					"patcher::peth::ppalwinsize" : [ "size", 33, 56, 293, 527 ],
+					"patcher[1]::players-bis::patcher::texture2reload" : [ "#-#", "po", "script newobject bpatcher player-simple.maxpat @bgmode 1 @args po 10 140 300 270 @varname po @presentation 1 @patching_rect 10 140 300 270 @presentation_rect 10 140 300 270" ],
+					"patcher[1]::players-bis::patcher::winsize" : [ "size", 330, 381, 1392, 1043 ],
+					"patcher[1]::players-bis::po::drager::mini" : [ 0 ],
+					"patcher[1]::players-bis::po::po-video" : [ "absolute", "/Users/ludo/Desktop/burea/documents-export-2012-12-17/720/3x720.mov" ],
+					"patcher[1]::mesh-bis::patcher::mesh1reload" : [ "#-#", "me1", "script newobject bpatcher abs-map-editeur.maxpat @bgmode 1 @args me1 10 103 650 150 @varname me1 @presentation 1 @patching_rect 10 103 650 150 @presentation_rect 10 103 650 150", "#-#", "me2", "script newobject bpatcher abs-map-editeur.maxpat @bgmode 1 @args me2 8 269 650 150 @varname me2 @presentation 1 @patching_rect 8 269 650 150 @presentation_rect 8 269 650 150", "#-#", "me3", "script newobject bpatcher abs-map-editeur.maxpat @bgmode 1 @args me3 9 423 650 150 @varname me3 @presentation 1 @patching_rect 9 423 650 150 @presentation_rect 9 423 650 150" ],
+					"patcher[1]::mesh-bis::patcher::winsize" : [ "size", 310, 326, 1287, 958 ],
+					"patcher[1]::mesh-bis::me1::drager::mini" : [ 0 ],
+					"patcher[1]::mesh-bis::me1::me1-face" : [ 1 ],
+					"patcher[1]::mesh-bis::me1::me1-layer" : [ 0 ],
+					"patcher[1]::mesh-bis::me1::me1-blend" : [ 0 ],
+					"patcher[1]::mesh-bis::me1::me1-subd" : [ 0 ],
+					"patcher[1]::mesh-bis::me1::me1-obj" : [ "absolute", "/Users/ludo/Desktop/burea/documents-export-2012-12-17/720/a" ],
+					"patcher[1]::mesh-bis::me1::me1-texture[1]" : [ "po" ],
+					"patcher[1]::mesh-bis::me2::drager::mini" : [ 0 ],
+					"patcher[1]::mesh-bis::me2::me2-layer" : [ 0 ],
+					"patcher[1]::mesh-bis::me2::me2-blend" : [ 0 ],
+					"patcher[1]::mesh-bis::me2::me2-obj" : [ "absolute", "/Users/ludo/Desktop/burea/documents-export-2012-12-17/720/b" ],
+					"patcher[1]::mesh-bis::me2::me2-face" : [ 1 ],
+					"patcher[1]::mesh-bis::me2::me2-subd" : [ 0 ],
+					"patcher[1]::mesh-bis::me2::me2-texture[1]" : [ "po" ],
+					"patcher[1]::mesh-bis::me3::drager::mini" : [ 0 ],
+					"patcher[1]::mesh-bis::me3::me3-obj" : [ "absolute", "/Users/ludo/Desktop/burea/documents-export-2012-12-17/720/c" ],
+					"patcher[1]::mesh-bis::me3::me3-face" : [ 1 ],
+					"patcher[1]::mesh-bis::me3::me3-subd" : [ 0 ],
+					"patcher[1]::mesh-bis::me3::me3-layer" : [ 0 ],
+					"patcher[1]::mesh-bis::me3::me3-blend" : [ 0 ],
+					"patcher[1]::mesh-bis::me3::me3-texture[1]" : [ "po" ],
+					"patcher[1]::degr-bis::patcher::texture1reload" : [  ],
+					"patcher[1]::degr-bis::patcher::winsize" : [ "size", 393, 158, 1400, 804 ],
+					"patcher[1]::view::winsize" : [ "size", 926, 136, 1289, 283 ]
+				}
+
+			}
+
+		}
+
+	}
+
+}
