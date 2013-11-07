@@ -1,5 +1,5 @@
 MW-lite (Mesh Warp Lite) is a fork from the great MeshWarp Server by Maybites
-
+v30
 this is the Yopla version : an adaptation in order to make quick test in theatre research for example
 
 
@@ -16,10 +16,8 @@ the save file consider as relative the file which are in the same folder and sub
 2/ 
 QuickMesh
 i've a made a little modelisation tool : quickMesh-2D creator to make some *.obj grids without blender. 
-Don't know why, the texture Y-coords needs +1. (cause of octane exporter for processing)
-i've added a button to add them in the Mesh editor
-it's only export tri, so the subdivsion
-quickMesh.app must be in the /mesh folder to be load from MW-l
+it's only export tri, so the subdivsion doesn't work
+quickMesh.app must be in the /quickmesh folder to be load from MW-l
 
 
 3/ 
@@ -36,3 +34,6 @@ original softedge and mask removed. Just use another mesh with blendMode and a g
 
 5/ 
 no osc remote… but why not a time line sync in the future
+
+6/
+cornerpin modifier around mesh is possible, send mesh as texture to another mesh

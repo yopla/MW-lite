@@ -1,0 +1,1 @@
+open thispatcherfolder "Machintosh HD:/00-boulots/MW-l/MW-l_23/src/lib"folder "Machintosh HD:/00-boulots/MW-l/MW-l_23/src/lib/gradient"folder "Machintosh HD:/00-boulots/MW-l/MW-l_23/src/lib/mesh"folder "Machintosh HD:/00-boulots/MW-l/MW-l_23/src/lib/player"

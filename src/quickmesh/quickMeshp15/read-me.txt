@@ -1,0 +1,21 @@
+what quickMeshBeta do for the moment ?
+
+load a image file at the beginning
+
+add point by -clicking-
+remove them with -right-clic-
+drag them
+
+import image -i
+
+make or remake a delaunay triangulation with -f-, and then :
+rollover the triangle center,
+delete triangle face with -d-   !!!! remove then 1 by 1 !!!!
+add triangle face with -a-
+
+save the mesh with -s-
+load the vertex of a *.obj with -l-
+erase with -e-
+
+
+

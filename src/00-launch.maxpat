@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 8
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 303.0, 127.0, 668.0, 504.0 ],
+		"rect" : [ 303.0, 127.0, 575.0, 432.0 ],
 		"bgcolor" : [ 0.0, 0.0, 0.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -31,14 +32,70 @@
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
+					"id" : "obj-50",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 153.5, 123.0, 69.0, 20.0 ],
+					"text" : "delay 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-51",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 209.0, 151.5, 34.0, 18.0 ],
+					"text" : "path"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-49",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 209.0, 103.0, 69.0, 20.0 ],
+					"text" : "delay 1000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-47",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 209.0, 49.0, 69.0, 20.0 ],
+					"text" : "delay 2000"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
 					"id" : "obj-48",
 					"linecount" : 9,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.0, 417.0, 50.0, 125.0 ],
-					"text" : "\"Machintosh HD:/00-boulots/maplitr - copie 7//MW-lite.maxpat\""
+					"patching_rect" : [ 389.0, 417.0, 54.0, 125.0 ],
+					"text" : "\"Macintosh HD:/Users/ludo/Desktop/MW-l_28/src//MW-lite.maxpat\""
 				}
 
 			}
@@ -191,7 +248,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "dispose", "bang" ],
-					"patching_rect" : [ 101.0, 164.0, 69.0, 20.0 ],
+					"patching_rect" : [ 32.0, 135.5, 69.0, 20.0 ],
 					"text" : "t dispose b"
 				}
 
@@ -371,7 +428,7 @@
 					"numinlets" : 4,
 					"numoutlets" : 0,
 					"patching_rect" : [ 567.0, 175.0, 120.0, 21.0 ],
-					"text" : "bgcolor 0. 0. 0. 1."
+					"text" : "bgcolor 0. 0. 0. 0."
 				}
 
 			}
@@ -384,7 +441,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 137.5, 49.0, 32.5, 18.0 ],
+					"patching_rect" : [ 68.5, 49.0, 32.5, 18.0 ],
 					"text" : "1"
 				}
 
@@ -397,7 +454,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 150.0, 77.0, 20.0, 20.0 ],
+					"patching_rect" : [ 81.0, 77.0, 20.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 378.0, 80.0, 46.0, 46.0 ]
 				}
@@ -412,7 +469,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 150.0, 109.0, 34.0, 20.0 ],
+					"patching_rect" : [ 81.0, 109.0, 34.0, 20.0 ],
 					"text" : "gate"
 				}
 
@@ -522,14 +579,14 @@
 					"fontname" : "Verdana",
 					"fontsize" : 11.0,
 					"id" : "obj-23",
-					"items" : [ "data", ",", "data/meshes", ",", "lib", ",", "lib/gradient", ",", "lib/mesh", ",", "lib/player", ",", "tmp" ],
+					"items" : [ "lib", ",", "lib/controler", ",", "lib/gradient", ",", "lib/include", ",", "lib/include/mesh", ",", "lib/mesh", ",", "lib/player", ",", "quickmesh", ",", "quickmesh/quickMeshp15", ",", "quickmesh/quickMeshp15/application.macosx", ",", "quickmesh/quickMeshp15/application.macosx/source", ",", "quickmesh/quickMeshp15/data", ",", "quickmesh/quickMeshp15/libraries", ",", "quickmesh/quickMeshp15/libraries/controlP5", ",", "quickmesh/quickMeshp15/libraries/controlP5/library", ",", "quickmesh/quickMeshp15/libraries/objExporter", ",", "quickmesh/quickMeshp15/libraries/objExporter/library", ",", "quickmesh/quickMeshp15/libraries/OBJLoader", ",", "quickmesh/quickMeshp15/libraries/OBJLoader/library", ",", "quickmesh/quickMeshp15/libraries/triangulate", ",", "quickmesh/quickMeshp15/libraries/triangulate/library", ",", "quickmesh/quickMeshp2", ",", "quickmesh/quickMeshp2/data", ",", "quickmesh/quickMeshp2/libraries", ",", "quickmesh/quickMeshp2/libraries/controlP5", ",", "quickmesh/quickMeshp2/libraries/controlP5/library", ",", "quickmesh/quickMeshp2/libraries/objExporter", ",", "quickmesh/quickMeshp2/libraries/objExporter/library", ",", "quickmesh/quickMeshp2/libraries/OBJLoader", ",", "quickmesh/quickMeshp2/libraries/OBJLoader/library", ",", "quickmesh/quickMeshp2/libraries/triangulate", ",", "quickmesh/quickMeshp2/libraries/triangulate/library" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "int", "", "" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 267.0, 273.0, 100.0, 20.0 ],
-					"prefix" : "Machintosh HD:/00-boulots/maplitr - copie 7/",
+					"prefix" : "Macintosh HD:/Users/ludo/Desktop/MW-l_28/src/",
 					"types" : "fold"
 				}
 
@@ -570,9 +627,9 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
-					"outlettype" : [ "bang", "path", "bang" ],
-					"patching_rect" : [ 195.0, 93.0, 65.0, 20.0 ],
-					"text" : "t b path b"
+					"outlettype" : [ "bang", "bang", "bang" ],
+					"patching_rect" : [ 195.0, 77.0, 47.0, 20.0 ],
+					"text" : "t b b b"
 				}
 
 			}
@@ -585,7 +642,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 195.0, 13.0, 61.0, 20.0 ],
+					"patching_rect" : [ 195.0, 11.0, 61.0, 20.0 ],
 					"text" : "loadbang"
 				}
 
@@ -599,7 +656,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 267.0, 165.0, 32.5, 20.0 ],
+					"patching_rect" : [ 267.0, 197.0, 32.5, 20.0 ],
 					"text" : "t l l"
 				}
 
@@ -669,7 +726,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 219.0, 129.0, 72.0, 20.0 ],
+					"patching_rect" : [ 209.0, 173.0, 72.0, 20.0 ],
 					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
 					"text" : "thispatcher"
 				}
@@ -827,15 +884,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-39", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-18", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -854,19 +902,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-25", 0 ],
+					"destination" : [ "obj-49", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-19", 0 ]
+					"source" : [ "obj-19", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
+					"destination" : [ "obj-50", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"source" : [ "obj-19", 1 ]
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -1124,10 +1172,46 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-51", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-49", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-10", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-50", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-51", 0 ]
 				}
 
 			}
@@ -1206,8 +1290,8 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "Story_16x16.png",
-				"bootpath" : "/00-boulots/maplitr - copie 7",
-				"patcherrelativepath" : "",
+				"bootpath" : "/Users/ludo/Desktop/MW-l_28/src",
+				"patcherrelativepath" : ".",
 				"type" : "PNG ",
 				"implicit" : 1
 			}
