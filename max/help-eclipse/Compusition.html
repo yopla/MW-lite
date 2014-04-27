@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Compusition</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/png" href="http://compusition.com/favicon.png">
+  <link href="Compusition_fichiers/application-2c63258e2cefd32d136d2a5d6826db46.css" media="all" rel="stylesheet">
+  
+  <link href="Compusition_fichiers/font-awesome.css" rel="stylesheet">
+  <script src="Compusition_fichiers/analytics.js" async=""></script><script src="Compusition_fichiers/application-c41b77e976831fb37c673ffca682221d.js"></script>
+  
+  <meta content="authenticity_token" name="csrf-param">
+<meta content="N2xjI06A9JOln5DPm4bUg21ikXul1vXBoGUj9pMnjhg=" name="csrf-token">
+</head>
+<body>
+<header id="header">
+  <a href="http://compusition.com/" title="home">
+    <span class="logo-container"><span class="logo"></span></span>
+    <h1>Compusition</h1>
+  </a>
+  <nav>
+     
+    <ul id="nav-list" class="writings">
+      <li id="nav-news"><a href="http://compusition.com/news"><i class="fa fa-comment-o fa-lg fa-fw"></i> News&nbsp;</a></li>
+      <li id="nav-music"><a href="http://compusition.com/music"><i class="fa fa-music fa-lg fa-fw"></i> Music</a></li>
+      <li id="nav-images"><a href="http://compusition.com/images"><i class="fa fa-camera fa-lg fa-fw"></i> Pics&nbsp;</a></li>
+      <li id="nav-writings"><a href="http://compusition.com/writings"><i class="fa fa-book fa-lg fa-fw"></i> Words</a></li>
+      <li id="nav-software"><a href="http://compusition.com/software"><i class="fa fa-gears fa-lg fa-fw"></i> Apps&nbsp;</a></li>
+      <li id="nav-about"><a href="http://compusition.com/about"><i class="fa fa-info-circle fa-lg fa-fw"></i> Info&nbsp;</a></li>
+    </ul>
+    <br>
+  </nav>
+</header>
+<section id="content" class="writings">
+  
+  
+<h2>Max/MSP Development with Eclipse</h2>
+
+<p>
+  This article explains how to setup an environment to develop Java externals for Max/MSP using
+  <a href="http://www.eclipse.org/">Eclipse</a>, the popular free open source IDE. Eclipse is cross platform, so these
+  instructions will work on OS X or Windows. No prior experience with Eclipse is assumed. If you already know Eclipse
+  and want a more concise setup guide, see Nick Rothwell's article
+  <a href="http://cycling74.com/2006/02/06/configuring-eclipse-for-mxj/">"Configuring Eclipse for MXJ"</a>.
+</p>
+
+<p>
+  Note: This article was written in 2008 so it refers to older versions of the involved software. Most of the steps
+  should still be the same today. I'm not really sure because I don't use Eclipse any more. These days, I use
+  <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a>, which costs money but I like it a lot better than Eclipse
+  (and it's free for open source projects).
+</p>
+
+<h3>Conventions</h3>
+<p>
+  When I say "right click", OS X users should understand this is the same as ctrl+click.
+</p>
+<p>
+  [Max installation] refers to the topmost folder of your Max/MSP installation. This is normally /Applications/MaxMSP
+  4.6 on OS X or :\Program Files\Cycling '74\MaxMSP 4.6 on Windows. (Or Max5 instead of MaxMSP 4.6 if you are using the
+  latest version)
+</p>
+
+<h3>Step by Step Instructions</h3>
+<ol>
+  <li><strong>Install Eclipse.</strong> Go to <a href="http://www.eclipse.org/downloads/">the Eclipse downloads page</a>
+    and choose a package. For most people the basic "Eclipse IDE for Java Developers" package is fine. Unpack the
+    download and put the eclipse folder in the location of your choice.
+  </li>
+  <li><strong>Start Eclipse</strong>. If this is your first time it will prompt you to select a workspace. This is where
+    your all your Eclipse projects and files will be stored. Check the "Use this as the default and do not ask again"
+    option.
+  </li>
+  <li id="setup-workbench"><strong>Setup your workbench</strong>. If this is your first time you'll see a welcome screen. Eclipse
+    can be confusing, so here's a simple but effective way to setup your workbench:
+    <ul>
+      <li>Go to Window -&gt; Open Perspective -&gt; Java. Close the welcome tab if it is still open.</li>
+      <li>Click Window -&gt; Show View -&gt; Navigator. This will add a file browser tab to the left pane.</li>
+      <li>Close the Task List and Outline tabs on the right (this should get rid of the right pane) and close the
+        Package Explorer and Hierarchy tabs on the left. We don't need any of these now. You can get them back by
+        selecting them from the Window -&gt; Show View menu.
+    </li></ul>
+  </li>
+  <li><strong>Create a Java project.</strong> Right click in the navigator tab and select New -&gt; Java Project. Enter the
+    name <em>max</em>. Then click finish. You should now see a folder named max in the Navigator.
+  </li>
+  <li id="add-jars"><strong>Add the Max Jar</strong> to your project:
+    <ul>
+      <li>In your Eclipse project, create a folder named <em>lib</em> by right clicking the max folder and selecting New
+        -&gt; Folder.
+      </li>
+      <li>Copy the max.jar file, found at [Max installation]/Cycling '74/java/lib/max.jar, to your project's lib
+        folder.
+      </li>
+      <li>Back in Eclipse, right click your max folder and select Refresh. This is so Eclipse will notice max.jar.</li>
+      <li>Right click your max folder again and select Properties -&gt; Java Build Path -&gt; Libraries -&gt; Add JARs...</li>
+      <li>Select max.jar and click OK</li>
+    </ul>
+    If you have Jitter, also add jitter.jar to your project. Later you will probably want to download other libraries,
+    and you can add them to your project the same way. <br>
+    <br>
+<span style="font-size:smaller;">
+Note: It is not necessary to copy these jars into your project. I 
+consider it a best practice to keep all the files required to build your
+ project inside the project itself. This way you can move your 
+environment to another machine and everything will continue to compile. 
+The downside is when a new version of max.jar is installed, you must 
+remember to manually copy it over to your Eclipse project. If you prefer
+ not to worry about that, choose "Add External Jars..." in the Build 
+Path -&gt; Libraries menu and select the max.jar file under your Max 
+installation instead of copying the jar file to your Eclipse project.</span><br>
+    <br>
+    At this point your workspace should look like this:
+    <a href="https://s3hub-26970d107940297a9dae7a83104f92a9d30730d0d6103f4385a508b86.s3.amazonaws.com/images/tutorials/ide/eclipse-blank.gif"><img src="Compusition_fichiers/eclipse-blank.gif"></a>
+  </li>
+  <li><strong>Set up Max's classpath</strong> to find your Java externals. Go to the file [Max installation]/Cycling
+    '74/java/max.java.config.txt. Make a backup! Edit the file and find the line:<br>
+    <code>; max.dynamic.class.dir /Users/topher/myclasses ;</code><br><br>
+    Make a copy of this line and remove the leading semicolon and change the path to the bin folder of your Eclipse
+    project, so it should look something like this:<br>
+    <code>max.dynamic.class.dir /Users/adam/Documents/workspace/max/bin</code><br><br>
+    <em>Note: you need to restart Max after making changes to this file.</em>
+  </li>
+  <li><strong>Create your first external.</strong> In Eclipse, right click the src folder and select New -&gt; Class. Enter
+    MaxTest for the name and click Finish. Paste this into the MaxTest file:
+    <textarea rows="9" cols="40" style="width:100%">      import com.cycling74.max.*;
+
+      public class MaxTest extends MaxObject {
+
+      public void bang() {
+      outlet(0, "Congratulations!");
+      }
+      }
+    </textarea><br>
+    When you save the file, MaxTest.class should appear in the bin folder. If not check the Project menu: the "Build
+    Automatically" setting should be turned on. This way, every time you save a file Eclipse will compile it
+    automatically.
+  </li>
+  <li><strong>Use your external.</strong> Finally! Fire up Max/MSP and add the object [mxj MaxTest]. Connect it's left
+    outlet to a [print] object and send it a bang. In the Max window you should see: Congratulations!<br>
+    The patch:<br>
+    <textarea rows="6" cols="40" style="width:100%">      #P button 48 46 15 0;
+      #P newex 48 94 32 196617 print;
+      #P newex 48 68 70 196617 mxj MaxTest;
+      #P connect 2 0 0 0;
+      #P connect 0 0 1 0;
+    </textarea>
+  </li>
+  <li><strong>Change your external.</strong>. Change "Congratulations!" to say something else. Save the file and Eclipse
+    will build it automatically. Go back to Max and click the button again. What's going on here? It still says
+    Congratulations! <br>
+    <br>
+    Max already loaded the object into memory. It didn't notice your changes. We need to force it to reload the object.
+    Luckily here is an easy way: Delete the object then immediately undo. This will keep your patch in order but the
+    Java code will have reloaded. Now click the button again and it should do what you expect.<br>
+    <br>
+    Remember this step! If you can't figure out why the code isn't working, maybe you forgot to delete-undo. Some other
+    tips:
+    <ul>
+      <li>Sometimes it takes a moment for Eclipse to build your changes. Be careful of doing the delete-undo too fast or
+        you might load the old code again. When in doubt, delete-undo again.
+      </li>
+      <li>To save time if you have multiple copies of the object in Max, select them all and delete-undo them
+        together.
+      </li>
+  
+  </ul>
+</li></ol>
+
+<h3>Next Steps</h3>
+<p>
+  Read [Max installation]/java-doc/WritingMaxExternalsInJava.pdf and take a look at the tutorial files in that folder.
+</p>
+<p>
+  To code in Java you need to know the API (application programming interface). Here is
+  <a href="http://java.sun.com/j2se/1.5.0/docs/api/">the API for Java 5</a> (you might have Java version 4 or 6 instead,
+  run "java -version" to find out). Cycling '74 provides another API for connecting Java to Max (that's the max.jar file
+  we put in your project). Cycling's API documentation can be found at [Max installation]/java-doc/api/index.html. You
+  will be referring to these a lot so you probably want to bookmark them in your browser.
+</p>
+<p>
+  BUT! The API reference is not an effective resource for learning the Java language. Try googling for tutorials or
+  consider investing in a book on Java.
+</p>
+<p>
+  If you are interested in embedding Ruby in Java and Max, try my
+  <a href="http://compusition.com/software/maxmsp/jruby_for_max">try my <strong>JRuby for Max</strong> object</a>.
+</p>
+
+  <p>
+    <br><br>
+    Adam Murray, 2008<br>
+    <a href="http://compusition.com/about#contact-info">contact the author...</a>
+  </p>
+
+
+</section>
+<footer>
+  <div class="license">
+  <a href="http://compusition.com/about#license-info" class="license">
+    <span></span>
+    © Adam Murray 2007-2014
+  </a>
+</div>
+
+</footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-47257329-1', 'compusition.com');
+  ga('send', 'pageview');
+</script>
+
+
+
+</body></html>
