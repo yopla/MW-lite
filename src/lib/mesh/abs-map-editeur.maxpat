@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 377.0, 406.0, 650.0, 150.0 ],
+		"rect" : [ 376.0, 406.0, 650.0, 150.0 ],
 		"bgcolor" : [ 0.752941, 0.854902, 0.905882, 0.9 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -153,12 +153,13 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-185",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 652.0, 1221.0, 107.0, 18.0 ],
-					"text" : "symbol pl"
+					"text" : "symbol (choix texture)"
 				}
 
 			}
@@ -167,7 +168,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-180",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -182,7 +182,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-177",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -298,7 +297,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 861.0, 62.0, 461.0, 736.0 ],
+						"rect" : [ 861.0, 88.0, 477.0, 710.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -319,6 +318,50 @@
 						"tags" : "",
 						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"args" : [ "mes" ],
+									"id" : "obj-59",
+									"maxclass" : "bpatcher",
+									"name" : "inside.maxpat",
+									"numinlets" : 2,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1140.75, 383.5, 115.0, 86.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 362.646484, 301.0, 112.0, 82.0 ],
+									"varname" : "inside[1]"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
+									"id" : "obj-58",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 701.0, 374.0, 72.0, 20.0 ],
+									"text" : "loadmess 0"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-53",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 685.146484, 423.5, 31.0, 31.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 390.146484, 243.5, 43.0, 43.0 ],
+									"varname" : "toggle[2]"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"attr" : "adapt",
 									"fontname" : "Arial",
@@ -474,7 +517,7 @@
 									}
 ,
 									"text" : "pattr #1-cropmesh @autorestore 0",
-									"varname" : "mesh-cropmesh"
+									"varname" : "#1-cropmesh"
 								}
 
 							}
@@ -1068,7 +1111,7 @@
 									}
 ,
 									"text" : "pattr #1-drawcorner @autorestore 0",
-									"varname" : "mesh-drawcorner"
+									"varname" : "#1-drawcorner"
 								}
 
 							}
@@ -1080,7 +1123,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 623.146484, 440.5, 31.0, 31.0 ],
+									"patching_rect" : [ 622.146484, 440.5, 31.0, 31.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 286.573242, 91.0, 43.0, 43.0 ],
 									"varname" : "toggle"
@@ -1117,7 +1160,7 @@
 									}
 ,
 									"text" : "pattr #1-modifier @autorestore 0  @default_priority 3",
-									"varname" : "mesh-modifier"
+									"varname" : "#1-modifier"
 								}
 
 							}
@@ -1161,8 +1204,9 @@
 									"id" : "obj-5",
 									"maxclass" : "bpatcher",
 									"name" : "cornerpin.maxpat",
-									"numinlets" : 0,
-									"numoutlets" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 799.594727, 238.5, 325.0, 231.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 21.146484, 184.5, 325.0, 231.0 ],
@@ -1180,13 +1224,13 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 706.594727, 76.0, 209.0, 20.0 ],
-									"restore" : [ 107 ],
+									"restore" : [ 256 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
 ,
 									"text" : "pattr #1-nodesizey @autorestore 0",
-									"varname" : "mesh-nodesizey"
+									"varname" : "#1-nodesizey"
 								}
 
 							}
@@ -1491,13 +1535,13 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 644.594727, 46.0, 209.0, 20.0 ],
-									"restore" : [ 380 ],
+									"restore" : [ 256 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
 ,
 									"text" : "pattr #1-nodesizex @autorestore 0",
-									"varname" : "mesh-nodesizex"
+									"varname" : "#1-nodesizex"
 								}
 
 							}
@@ -3236,6 +3280,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-59", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-46", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3258,6 +3311,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-52", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-53", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-59", 1 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-53", 0 ]
 								}
 
 							}
@@ -3303,6 +3374,24 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-57", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-18", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-58", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-53", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-58", 0 ]
 								}
 
 							}
@@ -3624,7 +3713,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-170",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3677,7 +3765,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-165",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -3692,7 +3779,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-164",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -3861,19 +3947,18 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-157",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 598.0, 1127.0, 296.0, 20.0 ],
-					"restore" : [ "pl" ],
+					"restore" : [ "(choix", "texture)" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
 ,
 					"text" : "pattr #1-texture @autorestore 0 @default_priority 10",
-					"varname" : "mesh-texture"
+					"varname" : "#1-texture"
 				}
 
 			}
@@ -3926,7 +4011,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 296.0, 1324.0, 86.0, 18.0 ],
-					"text" : "pl"
+					"text" : "(choix texture)"
 				}
 
 			}
@@ -4017,7 +4102,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-148",
-					"items" : [ "(choix", "texture)", ",", "<separator>", ",", "pl" ],
+					"items" : [ "(choix", "texture)", ",", "<separator>" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -4343,7 +4428,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 589.5, 1338.5, 95.0, 18.0 ],
-					"text" : "pl"
+					"text" : "(choix texture)"
 				}
 
 			}
@@ -5261,7 +5346,6 @@
 					"fontname" : "Arial",
 					"fontsize" : 9.0,
 					"id" : "obj-65",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 2,

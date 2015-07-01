@@ -4,11 +4,11 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 23.0, 44.0, 335.0, 591.0 ],
+		"rect" : [ 23.0, 44.0, 294.0, 532.0 ],
 		"bgcolor" : [ 0.908383, 0.954581, 1.0, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -29,6 +29,33 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-38",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 849.25, 530.0, 56.0, 20.0 ],
+					"text" : "s mouse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-30",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 849.25, 503.0, 77.0, 20.0 ],
+					"text" : "route mouse"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"handoff" : "",
 					"id" : "obj-43",
@@ -130,7 +157,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -481,7 +508,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -814,7 +841,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -1193,7 +1220,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -2046,7 +2073,7 @@
 					"presentation_linecount" : 5,
 					"presentation_rect" : [ 184.345703, 385.802094, 97.0, 51.0 ],
 					"saved_object_attributes" : 					{
-						"client_rect" : [ 4, 44, 516, 613 ],
+						"client_rect" : [ 854, 172, 1368, 413 ],
 						"parameter_enable" : 0,
 						"storage_rect" : [ 766, 44, 1220, 302 ]
 					}
@@ -2070,7 +2097,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -2436,7 +2463,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -3331,7 +3358,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -3700,13 +3727,12 @@
 													"fontname" : "Arial",
 													"fontsize" : 12.0,
 													"id" : "obj-30",
-													"linecount" : 2,
 													"maxclass" : "message",
 													"numinlets" : 2,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 767.0, 557.5, 158.0, 31.0 ],
-													"text" : "/Users/ludo/Desktop/MW-l_30/src/"
+													"text" : "/0_boulots/MW-lite/src/"
 												}
 
 											}
@@ -3844,7 +3870,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 552.0, 126.0, 186.0, 20.0 ],
-													"restore" : [ "size", 23, 44, 358, 635 ],
+													"restore" : [ 0 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0
 													}
@@ -4823,7 +4849,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -4963,7 +4989,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -5128,7 +5154,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1189.5, 551.0, 109.0, 35.0 ],
-									"text" : "write /Users/ludo/Desktop/MW-l_30/src/autosave.json"
+									"text" : "write /0_boulots/MW-lite/src/autosave.json"
 								}
 
 							}
@@ -5162,13 +5188,12 @@
 									"fontname" : "Arial",
 									"fontsize" : 9.0,
 									"id" : "obj-28",
-									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 475.5, 511.0, 187.0, 35.0 ],
-									"text" : "read /Users/ludo/Desktop/MW-l_30/src/autosave.json"
+									"text" : "read /0_boulots/MW-lite/src/autosave.json"
 								}
 
 							}
@@ -6117,7 +6142,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -6652,7 +6677,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -7487,6 +7512,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-38", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-30", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-16", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7730,6 +7764,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-82", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-78", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -7776,133 +7819,119 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "window.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c2p.js",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "autosave.json",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "players-bis.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/player",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/player",
 				"patcherrelativepath" : "./lib/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "loder.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "control-bis.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/controler",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/controler",
 				"patcherrelativepath" : "./lib/controler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "player-simple.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/player",
-				"patcherrelativepath" : "./lib/player",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "abs-tete.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/player",
-				"patcherrelativepath" : "./lib/player",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "drager.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "relative.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
-				"patcherrelativepath" : "./lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "mesh-bis.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EditorEventHandler.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "div.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mult.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "abs-map-editeur.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
+				"name" : "drager.maxpat",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "relative.maxpat",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"patcherrelativepath" : "./lib",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "cornerpin.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diagcrop.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"patcherrelativepath" : "./lib/mesh",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "inside.maxpat",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "degr-biss.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib/gradient",
+				"bootpath" : "/0_boulots/MW-lite/src/lib/gradient",
 				"patcherrelativepath" : "./lib/gradient",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "manager.maxpat",
-				"bootpath" : "/Users/ludo/Desktop/MW-l_30/src/lib",
+				"bootpath" : "/0_boulots/MW-lite/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1

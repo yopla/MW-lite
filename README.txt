@@ -36,4 +36,7 @@ original softedge and mask removed. Just use another mesh with blendMode and a g
 no osc remote… but why not a time line sync in the future
 
 6/
-cornerpin modifier around mesh is possible, send mesh as texture to another mesh
+cornerpin modifier around mesh is possible, Excellent : move the anchor inside of the plane ! (osx only)
+
+7/
+send mesh as texture to another mesh
