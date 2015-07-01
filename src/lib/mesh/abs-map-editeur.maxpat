@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 377.0, 409.0, 650.0, 150.0 ],
+		"rect" : [ 377.0, 384.0, 650.0, 150.0 ],
 		"bgcolor" : [ 0.752941, 0.854902, 0.905882, 0.9 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -297,7 +297,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 861.0, 88.0, 477.0, 710.0 ],
+						"rect" : [ 259.0, 138.0, 696.0, 716.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -325,9 +325,9 @@
 									"name" : "inside.maxpat",
 									"numinlets" : 2,
 									"numoutlets" : 0,
-									"patching_rect" : [ 1140.75, 383.5, 115.0, 86.0 ],
+									"patching_rect" : [ 1179.25, 265.5, 240.0, 310.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 362.646484, 301.0, 112.0, 82.0 ],
+									"presentation_rect" : [ 409.646484, 295.0, 230.0, 315.0 ],
 									"varname" : "inside[1]"
 								}
 
@@ -356,7 +356,7 @@
 									"parameter_enable" : 0,
 									"patching_rect" : [ 685.146484, 423.5, 31.0, 31.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 390.146484, 243.5, 43.0, 43.0 ],
+									"presentation_rect" : [ 415.146484, 243.5, 43.0, 43.0 ],
 									"varname" : "toggle[2]"
 								}
 
@@ -1105,7 +1105,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 527.146484, 403.5, 215.0, 20.0 ],
-									"restore" : [ 1 ],
+									"restore" : [ 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
