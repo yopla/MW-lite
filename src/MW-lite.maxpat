@@ -2490,6 +2490,19 @@
 								"box" : 								{
 									"fontname" : "Arial",
 									"fontsize" : 12.0,
+									"id" : "obj-25",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 1366.0, 606.0, 52.0, 20.0 ],
+									"text" : "s sauve"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontname" : "Arial",
+									"fontsize" : 12.0,
 									"frgb" : 0.0,
 									"id" : "obj-40",
 									"maxclass" : "comment",
@@ -3870,7 +3883,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 552.0, 126.0, 186.0, 20.0 ],
-													"restore" : [ 0 ],
+													"restore" : [ "size", 23, 44, 317, 576 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0
 													}
@@ -5192,7 +5205,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 475.5, 511.0, 187.0, 35.0 ],
+									"patching_rect" : [ 475.5, 511.0, 187.0, 15.0 ],
 									"text" : "read /0_boulots/MW-lite/src/autosave.json"
 								}
 
@@ -5538,6 +5551,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-132", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-5", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -5741,6 +5763,15 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-164", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-25", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-17", 0 ]
 								}
 
 							}
@@ -7832,6 +7863,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "autosave.json",
+				"bootpath" : "/0_boulots/MW-lite/src",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "players-bis.maxpat",
 				"bootpath" : "/0_boulots/MW-lite/src/lib/player",
 				"patcherrelativepath" : "./lib/player",
@@ -7923,6 +7961,13 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mes-inside.json",
+				"bootpath" : "/0_boulots/MW-lite/src",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "degr-biss.maxpat",
 				"bootpath" : "/0_boulots/MW-lite/src/lib/gradient",
 				"patcherrelativepath" : "./lib/gradient",
@@ -7938,6 +7983,14 @@
 			}
 , 			{
 				"name" : "shell.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "cv.jit.perspective.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "cv.jit.getperspective.mxo",
 				"type" : "iLaX"
 			}
  ]
