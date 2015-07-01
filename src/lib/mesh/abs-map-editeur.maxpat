@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 376.0, 406.0, 650.0, 150.0 ],
+		"rect" : [ 377.0, 409.0, 650.0, 150.0 ],
 		"bgcolor" : [ 0.752941, 0.854902, 0.905882, 0.9 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
@@ -58,9 +58,9 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 614.0, 758.0, 118.0, 17.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 2,
-					"presentation_rect" : [ 275.0, 94.0, 29.0, 27.0 ],
-					"text" : "mesh"
+					"presentation_linecount" : 5,
+					"presentation_rect" : [ 275.0, 94.0, 29.0, 57.0 ],
+					"text" : "mesh cornerpiné"
 				}
 
 			}
@@ -1025,7 +1025,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ -5.25, 130.0, 50.0, 18.0 ],
-									"text" : "0"
+									"text" : "1"
 								}
 
 							}
@@ -1105,7 +1105,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 527.146484, 403.5, 215.0, 20.0 ],
-									"restore" : [ 0 ],
+									"restore" : [ 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1154,7 +1154,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ -22.0, 9.0, 303.0, 20.0 ],
-									"restore" : [ 0 ],
+									"restore" : [ 1 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1204,7 +1204,7 @@
 									"id" : "obj-5",
 									"maxclass" : "bpatcher",
 									"name" : "cornerpin.maxpat",
-									"numinlets" : 1,
+									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
 									"patching_rect" : [ 799.594727, 238.5, 325.0, 231.0 ],
@@ -1224,7 +1224,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 706.594727, 76.0, 209.0, 20.0 ],
-									"restore" : [ 256 ],
+									"restore" : [ 200 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -1535,7 +1535,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 644.594727, 46.0, 209.0, 20.0 ],
-									"restore" : [ 256 ],
+									"restore" : [ 300 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -3311,15 +3311,6 @@
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-52", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-5", 0 ],
-									"disabled" : 0,
-									"hidden" : 0,
-									"source" : [ "obj-53", 0 ]
 								}
 
 							}
