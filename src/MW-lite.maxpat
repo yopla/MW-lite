@@ -131,15 +131,15 @@
 					"fontsize" : 12.0,
 					"frgb" : 0.0,
 					"id" : "obj-47",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 175.875, 353.75, 155.0, 74.0 ],
+					"patching_rect" : [ 175.875, 353.75, 155.0, 100.0 ],
 					"presentation" : 1,
-					"presentation_linecount" : 3,
-					"presentation_rect" : [ 35.25, 459.0, 215.0, 47.0 ],
-					"text" : "- relative-absolute differents disques ?\n- crop et cornerpin ajoutent anti alias?\n- uyvy ?"
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 35.25, 459.0, 215.0, 60.0 ],
+					"text" : "- relative-absolute differents disques ?\n- crop et cornerpin ajoutent anti alias?\n- uyvy ?\n- more keygrabbing (for corner)"
 				}
 
 			}
@@ -3745,7 +3745,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 767.0, 557.5, 158.0, 31.0 ],
-													"text" : "/0_boulots/MW-lite/src/"
+													"text" : "/0_boulots/MW/src/"
 												}
 
 											}
@@ -5167,7 +5167,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1189.5, 551.0, 109.0, 35.0 ],
-									"text" : "write /0_boulots/MW-lite/src/autosave.json"
+									"text" : "write /0_boulots/MW/src/autosave.json"
 								}
 
 							}
@@ -5206,7 +5206,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 475.5, 511.0, 187.0, 15.0 ],
-									"text" : "read /0_boulots/MW-lite/src/autosave.json"
+									"text" : "read /0_boulots/MW/src/autosave.json"
 								}
 
 							}
@@ -7850,147 +7850,139 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "window.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "c2p.js",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "autosave.json",
-				"bootpath" : "/0_boulots/MW-lite/src",
+				"bootpath" : "/0_boulots/MW/src",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "players-bis.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/player",
+				"bootpath" : "/0_boulots/MW/src/lib/player",
 				"patcherrelativepath" : "./lib/player",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "loder.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "control-bis.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/controler",
+				"bootpath" : "/0_boulots/MW/src/lib/controler",
 				"patcherrelativepath" : "./lib/controler",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mesh-bis.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EditorEventHandler.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "div.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mult.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "abs-map-editeur.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "drager.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "relative.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cornerpin.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "diagcrop.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "inside.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/mesh",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
 				"patcherrelativepath" : "./lib/mesh",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mes-inside.json",
-				"bootpath" : "/0_boulots/MW-lite/src",
+				"bootpath" : "/0_boulots/MW/src",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "degr-biss.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib/gradient",
+				"bootpath" : "/0_boulots/MW/src/lib/gradient",
 				"patcherrelativepath" : "./lib/gradient",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "manager.maxpat",
-				"bootpath" : "/0_boulots/MW-lite/src/lib",
+				"bootpath" : "/0_boulots/MW/src/lib",
 				"patcherrelativepath" : "./lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "shell.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "cv.jit.perspective.mxo",
-				"type" : "iLaX"
-			}
-, 			{
-				"name" : "cv.jit.getperspective.mxo",
 				"type" : "iLaX"
 			}
  ]

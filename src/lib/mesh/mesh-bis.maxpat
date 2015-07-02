@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 6,
 			"minor" : 1,
-			"revision" : 3,
+			"revision" : 10,
 			"architecture" : "x86"
 		}
 ,
@@ -58,7 +58,6 @@
 			}
 , 			{
 				"box" : 				{
-					"active" : 0,
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-31",
@@ -70,7 +69,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 918.575195, 153.5, 159.349609, 21.40625 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 847.25, 13.5, 159.349609, 21.40625 ],
+					"presentation_rect" : [ 503.650391, 4.5, 159.349609, 21.40625 ],
 					"text" : "(F) TransForm mesh",
 					"texton" : "(F) fermer transForm mesh"
 				}
@@ -173,7 +172,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -349,7 +348,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 611.5, 548.5, 163.0, 20.0 ],
-									"restore" : [ "size", 912, 44, 1269, 195 ],
+									"restore" : [ 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -766,7 +765,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -813,7 +812,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 322.0, 363.0, 50.0, 18.0 ],
-													"text" : "0.05 0."
+													"text" : "-0.05 0."
 												}
 
 											}
@@ -1387,7 +1386,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -1637,7 +1636,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -2057,7 +2056,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -3297,7 +3296,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -3459,7 +3458,7 @@
 										"appversion" : 										{
 											"major" : 6,
 											"minor" : 1,
-											"revision" : 3,
+											"revision" : 10,
 											"architecture" : "x86"
 										}
 ,
@@ -3562,7 +3561,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 10,
 															"architecture" : "x86"
 														}
 ,
@@ -3878,7 +3877,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 10,
 															"architecture" : "x86"
 														}
 ,
@@ -4732,7 +4731,7 @@
 														"appversion" : 														{
 															"major" : 6,
 															"minor" : 1,
-															"revision" : 3,
+															"revision" : 10,
 															"architecture" : "x86"
 														}
 ,
@@ -4895,7 +4894,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -5149,7 +5148,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6156,7 +6155,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6331,7 +6330,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6506,7 +6505,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6681,7 +6680,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6884,7 +6883,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -6921,7 +6920,7 @@
 																						"appversion" : 																						{
 																							"major" : 6,
 																							"minor" : 1,
-																							"revision" : 3,
+																							"revision" : 10,
 																							"architecture" : "x86"
 																						}
 ,
@@ -8326,7 +8325,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -9109,7 +9108,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -9805,7 +9804,7 @@
 																		"appversion" : 																		{
 																			"major" : 6,
 																			"minor" : 1,
-																			"revision" : 3,
+																			"revision" : 10,
 																			"architecture" : "x86"
 																		}
 ,
@@ -10152,7 +10151,7 @@
 																						"appversion" : 																						{
 																							"major" : 6,
 																							"minor" : 1,
-																							"revision" : 3,
+																							"revision" : 10,
 																							"architecture" : "x86"
 																						}
 ,
@@ -14571,7 +14570,7 @@
 						"appversion" : 						{
 							"major" : 6,
 							"minor" : 1,
-							"revision" : 3,
+							"revision" : 10,
 							"architecture" : "x86"
 						}
 ,
@@ -15084,7 +15083,7 @@
 					"patching_rect" : [ 1083.0, 31.5, 223.0, 83.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 331.0, 11.5, 337.0, 69.0 ],
+					"presentation_rect" : [ 326.0, 33.5, 337.0, 69.0 ],
 					"text" : ".... Il apparaitra ici ...\non peux ensuite le dépalcer dans la fenêtre"
 				}
 
@@ -15467,6 +15466,46 @@
 					"source" : [ "obj-86", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "loder.maxpat",
+				"bootpath" : "/0_boulots/MW/src/lib",
+				"patcherrelativepath" : "..",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "c2p.js",
+				"bootpath" : "/0_boulots/MW/src/lib",
+				"patcherrelativepath" : "..",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "EditorEventHandler.maxpat",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "div.maxpat",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "mult.maxpat",
+				"bootpath" : "/0_boulots/MW/src/lib/mesh",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "shell.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

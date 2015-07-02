@@ -37,8 +37,8 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 112.0, 754.0, 122.0, 20.0 ],
-					"text" : "r #1-fromInsideGUI"
+					"patching_rect" : [ 114.426758, 754.0, 91.0, 20.0 ],
+					"text" : "r #1-fromInside"
 				}
 
 			}
@@ -580,7 +580,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 564.686829, 1227.119141, 172.0, 20.0 ],
-					"restore" : [ 570, 618 ],
+					"restore" : [ -1000, 2000 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -600,7 +600,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 143.353516, 1212.119141, 168.0, 20.0 ],
-					"restore" : [ 318, 605 ],
+					"restore" : [ -1000, 2000 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -620,7 +620,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 564.686829, 970.619141, 174.0, 20.0 ],
-					"restore" : [ 634, 319 ],
+					"restore" : [ -1000, 2000 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
@@ -640,7 +640,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 177.603516, 962.619141, 170.0, 20.0 ],
-					"restore" : [ 351, 360 ],
+					"restore" : [ -1000, 2000 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0
 					}
